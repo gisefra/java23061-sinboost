@@ -1,0 +1,368 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Anuphan', sans-serif;
+}
+
+.header{
+    height: 100vh;
+
+}
+
+.headerNav{
+    height:15%;
+    background-color: rgb(53,58,64);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:1rem 5rem;
+}
+
+
+.contenedorLogo{
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedorLogo a{
+    display: inline-block;
+    width: 40%;
+}
+.contenedorLogo img{
+    width: 100%;
+    object-fit: cover;
+}
+.contenedorLogo h2{
+    color: white;
+}
+
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: small;
+}
+
+.listaNav{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.linkNav{
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    padding: 10%;
+    font-size: small;
+    height: 10%;
+}
+
+[href="./pages/comprar_tickets.html"] {
+    color: darkgreen;
+}
+
+
+.laConferencia{
+    height: 85%;
+    background:linear-gradient(to bottom,#00000026, #000000c2,#00000026), url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.contenedorTextConf{
+    width:40%;
+    color:white;
+    /* height: 35%; */
+    
+    text-align: right;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+}
+.quiero{
+    background-color:rgba(236, 234, 225, 0.726) ;
+    border: 10px;
+    padding: 15px 32px;
+    margin-right: 0.8rem;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+}
+.comprar{
+    background-color:rgb(49, 165, 59) ;
+    border: 10px;
+    padding: 15px 32px;
+    margin-right: 0.8rem;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+}
+.contenedorTextConf h1{
+    margin-bottom: 4rem;
+}
+.contenedorTextConf p{
+    margin-bottom: 1rem;
+}
+
+.sectionOradores h2{
+    text-align: center;
+}
+
+.padreCards{
+    width: 90%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    height: 90vh;
+    column-gap: 4%;
+}
+.card{
+    border: 1px solid black;
+    width:  350px;
+    height: 85%;
+
+}
+.card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 4% 4% 0px 0px;
+}
+.cardBody{
+    border-radius: 4%;
+    height:39%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:0 1rem;
+}
+.cardTags{
+    display:flex;
+}
+
+.btn{
+    background-color:rgb(255, 196, 0) ;
+    border: 10px;
+    margin-right: 0.8rem;
+    text-align: center;
+}
+.btn1{
+    background-color: rgb(59, 199, 199);
+    border: 10px;
+    margin-right: 0.8rem;
+    text-align: center;
+}
+.btn2{
+    background-color: rgb(94, 94, 94);
+    border: 10px;
+    margin-right: 0.8rem;
+    text-align: center;
+}
+.btn3{
+    background-color: rgb(197, 6, 6);
+    border: 10px;
+    margin-right: 0.8rem;
+    text-align: center;
+}
+.btn4{
+    background-color:transparent
+    border: 10px;
+    padding: 15px 32px;
+    margin-right: 0.8rem;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: white;
+}
+.tituloCardBody1{
+    background-color: aqua;
+}
+.lugarFecha{
+    display:flex;
+    align-items: stretch;
+    height: 60vh;
+    background-color: rgb(53,58,64);
+    color:white;
+}
+.left{
+    width: 50%;
+    background-image: url("../assets/img/honolulu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right{
+    width:50%;
+    border-left: 1px solid white;
+    padding: 2%;
+}
+
+.right h2{
+    
+}
+.right p{
+    margin-bottom: 1rem;
+    line-height:1.7;
+}
+
+.formularioOrador{
+    width:50%;
+    height: 42vh;
+    margin:2rem auto;
+    text-align: center;
+}
+.inputNA{
+    width: 48%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    padding-left: 0.5rem;
+}
+.textArea{
+    width: 98%;
+    height: 6rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    /*padding-left: 0.5rem;*/
+}
+.charla{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(7, 6, 6);
+}
+.formSubmit{
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid rgb(172, 219, 95);
+    background-color: rgb(172, 219, 95);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.footer{
+    background:linear-gradient( to right, #1d3947,#1d4962, #1e5372) ;
+    height: 10vh;
+}
+.contenedorFooter{
+    width:70%;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedorFooter a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+@media screen and (min-width: 568px) and (max-width:767px) {
+.headerNav{
+        background-color:  rgb(53,58,64);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding:1rem 1rem;
+}
+.contenedorLogo{
+        width:70%;
+}
+.navegacion{
+        width: 100%;
+    }
+    .listaNav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .linkNav{
+        font-size: 1rem;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+    
+    
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width:1299px) {
+    .headerNav{
+        padding:1rem 1rem;
+    }
+    .contenedorLogo{
+        width:30%;
+    }
+    .navegacion{
+        margin-left:20px;
+        width: 65%;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width:1399px) {
+    * {
+        margin: -7px;
+        padding: 7px;
+        box-sizing: border-box;
+    }
+    
+    .headerNav{
+        padding:2rem 1rem;
+        justify-content: space-between;
+        font-size: medium;
+    }
+    .contenedorLogo{
+        width:30%;
+    }
+    .navegacion{
+        margin-left:20px;
+        width: 65%;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+    .footer{
+        height: 7vh;
+    }
+}

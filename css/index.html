@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        <!-- favicon-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!--kit de fontawesome-->
+        <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+<!--estilos externos CORRECTA!!-->
+<link rel="stylesheet" href="./css/estilos.css">
+        
+    </head>
+    <!--sintaxsis de atributo en linea
+    <body style="background-color: rgb(249, 159, 174);">-->
+    <body>
+        <header class="header">
+            <div class="headerNav">
+                <div class="contenedorLogo">
+                    <a href="#">
+                        <img src="./assets/img/codoacodo.png" alt="Logo">
+                    </a>
+                    <h2>Conf. Bs.As.</h2>
+                
+                </div>
+                <nav class="navegacion">
+                    <ul class="listaNav">
+                        <li><a class="linkNav" href="#laConferencia">La Conferencia</a></li>
+                        <li><a class="linkNav" href="#losOradores">Los Oradores</a></li>
+                        <li><a class="linkNav" href="#lugarYfecha">Lugar y La Fecha</a></li>
+                        <li><a class="linkNav" href="#convierteteEnOrador">Conviertete en Orador</a></li>
+                        <li><a class="linkNav" href="./pages/comprar_tickets.html">Comprar tickets</a></li>
+                    
+                    </ul>
+                
+                </nav>
+            </div>  
+            <section id ="laConferencia" class="laConferencia ">
+               <div class="contenedorTextConf">
+                    <h1>Conferencia Bs.As.</h1>
+                    <p class="parrafoConferencia">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias soluta voluptatem magnam. Consectetur sit placeat delectus commodi provident labore, vel quam nesciunt? Error unde dignissimos sed! Reiciendis pariatur repellat corrupti!</p>
+                    <div>
+                        <a href="#convierteteEnOrador">Quiero ser orador</a>
+                        <a href="./pages/comprar_tickets.html">Comprar tickets</a>
+                    </div>
+                   
+               </div>
+                
+               
+            </section>
+       </header>
+       <main>
+            <section id="losOradores" class="sectionOradores">
+                <h2 class="tituloRadores"><span>CONOCE A LOS</span> <br> ORADORES</h2>
+                <div class="padreCards">
+                    <div class="card" id="cardUno">
+                        <img src="./assets/img/steve.jpg" alt="Steve Jobs">
+                        <div class="cardBody">
+                            <div class="cardTags">
+                                <h4 class="tituloCardBody">Javascript</h4>
+                                <h4 class="tituloCardBody">React</h4>
+                            </div>
+                            
+                            <h2>Steve Jobs</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam debitis ullam voluptates fugiat nemo, excepturi, distinctio hic quisquam voluptatem quidem sequi! Odio odit aliquam, non molestias repudiandae fugit repellat at!</p>
+                        </div>
+                       
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/bill.jpg" alt="Bill Gates">
+                        <div class="cardBody">
+                            <div class="cardTags">
+                                <h4 class="tituloCardBody">Javascript</h4>
+                                <h4 class="tituloCardBody">React</h4>
+                            </div>
+                            <h2>Bill Gates</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam debitis ullam voluptates fugiat nemo, excepturi, distinctio hic quisquam voluptatem quidem sequi! Odio odit aliquam, non molestias repudiandae fugit repellat at!</p>
+                        </div>
+                      
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/ada.jpeg" alt="Ada">
+                        <div class="cardBody">
+                            <div class="cardTags">
+                                <h4 class="tituloCardBody">Javascript</h4>
+                                <h4 class="tituloCardBody">React</h4>
+                            </div>
+                            <h2>Ada Lovelace</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam debitis ullam voluptates fugiat nemo, excepturi, distinctio hic quisquam voluptatem quidem sequi! Odio odit aliquam, non molestias repudiandae fugit repellat at!</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="lugarYfecha" class="lugarFecha">
+                <div class="left">
+
+                </div>
+                <div class="right">
+                    <h2>Bs.As - Octubre</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quibusdam ipsam aspernatur, at veritatis exercitationem sint fugiat culpa aliquam quos accusantium dignissimos recusandae, fugit minima quidem veniam, nulla odio consequatur!</p>
+                    <a href="">Conocé Más</a>
+                </div>
+            </section>
+            <section id="convierteteEnOrador" class="formularioOrador">
+                <h2><span>CONVIERTETE EN UN </span> <br> ORADOR</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae sunt!</p>
+                <form action="" autocomplete="on">
+                    <div>
+                        <input  class="inputNA" type="text" placeholder="Nombre" required>
+                        <input class="inputNA" type="text" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <textarea class="textArea" name="" id="" cols="44" rows="6" placeholder="Sobre que quieres hablar?" required></textarea>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <div>
+                        <input type="submit" value="Enviar" class="formSubmit">
+                    </div>
+                </form>
+            </section>
+       </main>
+     
+       <footer class="footer">
+            <div class="contenedorFooter">
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href=""><i class="fa-brands fa-instagram iconInstagram"></i></a>
+                <a href=""><img class="wsp" src="./assets/img/whatsapp.png" alt="what"></a>
+               
+            </div>
+       </footer>
+
+    </body>
+</html>
