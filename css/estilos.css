@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+/* body{
     font-family: 'Anuphan', sans-serif;
-}
+    font-family: Arial, Helvetica, sans-serif;
+} */
 
 .header{
     height: 100vh;
@@ -15,39 +17,42 @@ body{
 }
 
 .headerNav{
-    height:15%;
+    height:10%;
     background-color: rgb(53,58,64);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:1rem 5rem;
+    /* padding:1rem 4rem; */
 }
 
 
 .contenedorLogo{
+    color: white;
     width:20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 50px;
 }
 .contenedorLogo a{
-    display: inline-block;
+    /* display: inline-block; */
     width: 40%;
 }
 .contenedorLogo img{
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
-.contenedorLogo h2{
+/* .contenedorLogo h2{
     color: white;
-}
+} */
 
 .navegacion{
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-right: 50px;
+    /* justify-content: center;
     width: 50%;
-    font-size: small;
+    font-size: small; */
 }
 
 .listaNav{
@@ -63,12 +68,12 @@ body{
     justify-content: space-between;
     padding-right: 1rem;
     font-size: 1.2rem;
-    padding: 10%;
+    /* padding: 10%; */
     font-size: small;
     height: 10%;
 }
 
-[href="./pages/comprar_tickets.html"] {
+.listaNav [href="./pages/comprar_tickets.html"] {
     color: darkgreen;
 }
 
@@ -95,31 +100,48 @@ body{
     justify-content: space-between;*/
 }
 .quiero{
-    background-color:rgba(236, 234, 225, 0.726) ;
-    border: 10px;
-    padding: 15px 32px;
+    background-color:transparent;
+    border-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    /* border: 10px; */
+    padding: 10px 20px;
     margin-right: 0.8rem;
     text-align: center;
+    text-decoration: none;
     font-size: 15px;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     cursor: pointer;
+    /* color: white; */
+    text-decoration: none;
+}
+
+.quiero a{
     color: white;
     text-decoration: none;
-
 }
+
 .comprar{
     background-color:rgb(49, 165, 59) ;
-    border: 10px;
-    padding: 15px 32px;
+    border-radius: 5px;
+    /* border: 2px; */
+    border-color: rgb(49, 165, 59);
+    border-style: solid;
+    padding: 10px 20px;
     margin-right: 0.8rem;
     text-align: center;
     font-size: 15px;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     cursor: pointer;
+    /* color: white; */
+    text-decoration: none;
+}
+
+.comprar a{
     color: white;
     text-decoration: none;
-
 }
+
 .contenedorTextConf h1{
     margin-bottom: 4rem;
 }
@@ -129,21 +151,23 @@ body{
 
 .sectionOradores h2{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .padreCards{
-    width: 90%;
-    margin: 0 auto;
+    /* width: 90%; */
+    margin:auto;
     display:flex;
     flex-direction: row;
     justify-content:center;
     align-items:center;
-    flex-wrap: wrap;
-    height: 90vh;
+    /* flex-wrap: wrap; */
+    /* height: 90vh; */
     column-gap: 4%;
 }
 .card{
-    border: 1px solid black;
+    border: 1px solid lightgrey;
+    /* border-radius: 4% 4% 0px 0px; */
     width:  350px;
     height: 85%;
 
@@ -152,9 +176,10 @@ body{
     width: 100%;
     height: 60%;
     object-fit: cover;
-    border-radius: 4% 4% 0px 0px;
+    /* border-radius: 4% 4% 0px 0px; */
 }
 .cardBody{
+    margin-bottom: 20px;
     border-radius: 4%;
     height:39%;
     display:flex;
@@ -168,31 +193,65 @@ body{
 }
 
 .btn{
+    height: 20px;
+    width: 80px;
     background-color:rgb(255, 196, 0) ;
-    border: 10px;
-    margin-right: 0.8rem;
+    border-radius: 5px;
+    border-style: none;
+    margin-right: 0.5rem;
     text-align: center;
+    font-weight: bold;
 }
 .btn1{
+    height: 20px;
+    width: 50px;
     background-color: rgb(59, 199, 199);
-    border: 10px;
-    margin-right: 0.8rem;
+    /* border: 10px; */
+    border-radius: 5px;
+    border-style: none;
+    margin-right: 0.5rem;
     text-align: center;
+    font-weight: bold;
+    color: white;
 }
 .btn2{
+    height: 20px;
+    width: 70px;
     background-color: rgb(94, 94, 94);
-    border: 10px;
-    margin-right: 0.8rem;
+    border-radius: 5px;
+    border-style: none;
+    /* border: 10px; */
+    margin-right: 0.5rem;
     text-align: center;
+    font-weight: bold;
+    color: white;
 }
 .btn3{
+    height: 20px;
+    width: 60px;
     background-color: rgb(197, 6, 6);
-    border: 10px;
-    margin-right: 0.8rem;
+    border-radius: 5px;
+    border-style: none;
+    /* border: 10px; */
+    margin-right: 0.5rem;
     text-align: center;
+    font-weight: bold;
+    color: white;
 }
 .btn4{
-    background-color:transparent
+    background-color:transparent;
+    border-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px 20px;
+    margin-right: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    /* background-color:transparent;
     border: 10px;
     padding: 15px 32px;
     margin-right: 0.8rem;
@@ -200,12 +259,13 @@ body{
     font-size: 15px;
     margin: 4px 2px;
     cursor: pointer;
-    color: white;
+    color: white; */
 }
 .tituloCardBody1{
     background-color: aqua;
 }
 .lugarFecha{
+    margin-top: 30px;
     display:flex;
     align-items: stretch;
     height: 60vh;
@@ -223,11 +283,9 @@ body{
     width:50%;
     border-left: 1px solid white;
     padding: 2%;
+    font-size: small;
 }
 
-.right h2{
-    
-}
 .right p{
     margin-bottom: 1rem;
     line-height:1.7;
@@ -235,10 +293,22 @@ body{
 
 .formularioOrador{
     width:50%;
-    height: 42vh;
-    margin:2rem auto;
+    /* height: 42vh; */
+    margin:0.3rem auto;
     text-align: center;
 }
+
+.ignite{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.titulo {
+    text-align: start;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
 .inputNA{
     width: 48%;
     height: 2rem;
@@ -250,7 +320,7 @@ body{
 .textArea{
     width: 98%;
     height: 6rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     border-radius: 5px;
     border: 1px solid rgb(198, 198, 198);
     /*padding-left: 0.5rem;*/
@@ -267,28 +337,31 @@ body{
     border: 1px solid rgb(172, 219, 95);
     background-color: rgb(172, 219, 95);
     color: white;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 1rem;
     cursor: pointer;
     margin-bottom: 1rem;
 }
 
 .footer{
+    display: flex;
     background:linear-gradient( to right, #1d3947,#1d4962, #1e5372) ;
-    height: 10vh;
+    /* height: 10vh; */
+    height: 80px;
 }
 .contenedorFooter{
-    width:70%;
-    height: 100%;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-between;
+    /* width:70%; */
+    /* height: 100%; */
+    margin:auto;
+    /* justify-content: space-between; */
     align-items: center;
 }
 .contenedorFooter a{
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+    /* padding: 0 auto; */
+    margin-inline: 20px;
 }
 @media screen and (min-width: 568px) and (max-width:767px) {
 .headerNav{
@@ -322,7 +395,7 @@ body{
 
 
 
-@media screen and (min-width: 992px) and (max-width:1299px) {
+/* @media screen and (min-width: 992px) and (max-width:1299px) {
     .headerNav{
         padding:1rem 1rem;
     }
@@ -337,9 +410,9 @@ body{
         width: 90%;
         height: initial;
     }
-}
+} */
 
-@media screen and (min-width: 1300px) and (max-width:1399px) {
+/* @media screen and (min-width: 1300px) and (max-width:1399px) {
     * {
         margin: -7px;
         padding: 7px;
@@ -352,8 +425,8 @@ body{
         font-size: medium;
     }
     .contenedorLogo{
-        width:30%;
-    }
+        width:30%; */
+    /* }
     .navegacion{
         margin-left:20px;
         width: 65%;
@@ -365,4 +438,4 @@ body{
     .footer{
         height: 7vh;
     }
-}
+} */
