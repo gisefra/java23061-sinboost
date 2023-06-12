@@ -1,47 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Proyecto</title>
-        <!--estilos externos-->
-        <link rel="stylesheet" href="../css/estilos.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/img/BA.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/css/estilosComprar.css">
+
+</head>
     <!-- <body style="background-color: rgb(249, 159, 174);">-->
-    <body >
-       <header>
-            <div>
-                <a href="../index.html"><img src="../assets/img/codoacodo.png" alt="Logo"></a>
-                <h2>Conf. Bs.As.</h2>
-               
+<body>
+    <header class="header">
+        <div class="headerNav">
+            <div class="contenedorLogo">
+                <a href="#">
+                    <img src="../assets/assets/img/codoacodo.png" alt="Logo">
+                </a>
+                    <h3>Conf. Bs.As.</h3>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html#laConferencia">La Conferencia</a></li>
-                    <li><a href="../index.html#losOradores">Los Oradores</a></li>
-                    <li><a href="../index.html#lugarYfecha">Lugar y La Fecha</a></li>
-                    <li><a href="../index.html#convierteteEnOrador">Conviertete en Orador</a></li>
-                    <li><a href="#">Comprar tickets</a></li>
-                </ul>
-            </nav>
-          
-       </header>
-       <main>
-          
-       </main>
-     
-       <footer>
-            <div>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-               
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li><a class="linkNav" href="#laConferencia">La Conferencia</a></li>
+                <li><a class="linkNav" href="#losOradores">Los Oradores</a></li>
+                <li><a class="linkNav" href="#lugarYfecha">Lugar y La Fecha</a></li>
+                <li><a class="linkNav" href="#convierteteEnOrador">Conviertete en Orador</a></li>
+                <li><a class="linkNav" href="./pages/comprar_tickets.html">Comprar tickets</a></li>
+            </ul>
+        </nav>     
+    </header>
+        <section>
+            <div class="padreCards d-flex">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <!-- <div class="card-header">Header</div> -->
+                    <div class="card-body">
+                        <br>
+                        <h2 class="card-title text-center">Estudiante</h2>
+                        <h6><p class="card-text text-center ">Tienen un descuento.</p></h6>
+                        <p class="card-text text-center"><strong>80%</strong></p>
+                        <p class="card-text text-center"><small class="text-muted">*Presentar documentación</small></p>
+                    </div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <!-- <div class="card-header">Header</div> -->
+                    <div class="card-body">
+                        <br>
+                        <h2 class="card-title text-center">Trainee</h2>
+                        <h6><p class="card-text text-center">Tienen un descuento.</p></h6>
+                        <p class="card-text text-center"><strong>50%</strong></p>
+                        <p class="card-text text-center"><small class="text-muted">*Presentar documentación</small></p>
+                    </div>
+                </div>
+                <div class="card border-warning mb-3" style="max-width: 18rem;">
+                    <!-- <div class="card-header">Header</div> -->
+                    <div class="card-body">
+                        <br>
+                        <h2 class="card-title text-center">Junior</h2>
+                        <h6><p class="card-text text-center">Tienen un descuento.</p></h6>
+                        <p class="card-text text-center"><strong>15%</strong></p>
+                        <p class="card-text text-center "><small class="text-muted">*Presentar documentación</small></p>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="text-center valor200">
+                <P>Venta <br><strong>VALOR DE TICKET $200</strong class= "tickett"></P>
             </div>
-       </footer>
-    </body>
+        </section>
+        <section>
+            <form action="" class="formulario-tickets" id="formulario-tickets">
+                <div>    
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input type="email" class="form-control" placeholder="Correo" aria-label="Correo"s>
+                        </div>
+                        <div class="col-6 mt-3">
+                            <label for="" class="ps-1">Cantidad</label>
+                            <input type="text" class="form-control mt-2" id="input-cantidad" placeholder="Cantidad" aria-label="Cantidad" required>
+                        </div>
+                        <div class="col-6 mt-3">
+                            <label for="" class="ps-1">Categoría</label>
+                            <select class="form-select select-tickets mt-2"  id="select-tickets" aria-label="Default select example">
+                                <option selected>Selecciona una Categoría</option>
+                                <option value="1">Estudiante</option>
+                                <option value="2">Trainee</option>
+                                <option value="3">Junior</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <input type="text" class="form-control form-control-lg total-pagar" id="input-total-pagar" placeholder="Total a pagar: $" aria-label="Total" disabled>
+                        </div>
+                        <div class="container-btn-tickets d-flex justify-content-between">
+                            <button type="submit" class="btn btn-success btn-ticket mt-4 p-2" onclick="borrar();">Borrar</button>
+                            <button type="submit" class="btn btn-success btn-ticket mt-4 p-2" onclick="montoPagar();">Resumen</button>
+                        </div>         
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="contenedorFooter">
+                <a href="">Preguntas frecuentes</a>
+                <a href="">Contáctanos</a>
+                <a href="">Prensa</a>
+                <a href="">Conferencias</a>
+                <a href="">Términos y condiciones</a>
+                <a href="">Privacidad</a>
+                <a href="">Estudiantes</a>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </script>
+    <script src="../js/script.js"></script>       
+
+</body>
 </html>
